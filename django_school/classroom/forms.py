@@ -28,6 +28,7 @@ class StudentSignUpForm(UserCreationForm):
 
     class Meta(UserCreationForm.Meta):
         model = User
+        
 
     @transaction.atomic
     def save(self):
